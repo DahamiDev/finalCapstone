@@ -1,0 +1,13 @@
+{
+  "name": "studymate-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol Server for StudyMate Notes integration",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1"
+  }
+}
