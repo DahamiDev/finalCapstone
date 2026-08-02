@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate — AI-Powered Study Assistant</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Header/Nav -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap logo-icon"></i>
+                <span class="logo-text">Study<span class="highlight">Mate</span></span>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#faq">FAQ</a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <a href="http://localhost:5173" class="btn btn-secondary nav-btn">Open App</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <span class="badge">Next-Gen Learning Assistant</span>
+            <h1>Supercharge Your Learning with <span class="gradient-text">StudyMate</span></h1>
+            <p class="hero-pitch">Transform dense, complex notes into structured summaries and instant quiz questions. Built to help students retain information faster and study smarter.</p>
+            <div class="hero-actions">
+                <a href="http://localhost:5173" class="btn btn-primary">
+                    Open App <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#features" class="btn btn-tertiary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose StudyMate?</h2>
+                <p>Designed with features that put focus, speed, and learning retention first.</p>
+            </div>
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>AI-Powered Summaries</h3>
+                    <p>Leverage state-of-the-art AI to instantly compress dense text into concise, 3-bullet point summaries. Save hours of manual review.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-clipboard-question"></i>
+                    </div>
+                    <h3>Interactive Quizzes</h3>
+                    <p>Auto-generate dynamic quiz questions directly from your study contents. Test your knowledge on the spot and master subjects faster.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h3>Subject Organization</h3>
+                    <p>Easily organize, search, and manage your study notes by subject in a lightning-fast, reactive client dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Have questions? We've got answers.</p>
+            </div>
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does StudyMate summarize my notes?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>StudyMate uses OpenAI's advanced AI models to process your notes. When you click "Summarize", the AI reads your content, distills the key takeaways into exactly three bullet points, and designs a relevant quiz question to test your knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is my data stored securely?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Yes, all your notes and study materials are securely saved in a cloud-hosted MongoDB database, accessible only through your instance of the StudyMate app.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the MCP Server in StudyMate?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>The Model Context Protocol (MCP) server allows AI agents (like Claude or other assistants) to securely list or create study notes in your application directly via standard command-line tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 StudyMate. Built for Advanced Agentic Coding Capstone.</p>
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#faq">FAQ</a>
+                <a href="http://localhost:5173">App</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
