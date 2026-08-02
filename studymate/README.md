@@ -1,3 +1,8 @@
+# 🎥 Project Demo Video
+Watch the full demo video here: [StudyMate Demo Video](https://drive.google.com/file/d/10UGT6k9djcK523gOgzsni0XBdEStFDjZ/view?usp=sharing)
+
+---
+
 # StudyMate — Full-Stack AI Study Assistant
 
 **StudyMate** is an advanced learning dashboard that helps students organize notes, generate AI summaries, and test their retention with dynamically generated quizzes.
